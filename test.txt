@@ -1,0 +1,7 @@
+import subprocess
+nb_of_times = int(input(""))
+for i in range(nb_of_times):
+    try:
+        print(subprocess.check_output(['ping', 'google.com']))
+    except subprocess.CalledProcessError as err:
+        print(err)
