@@ -1,7 +1,47 @@
+I used code from Django and Tensorflow for this text file for the text printed on the website 
+
+
+
 import subprocess
-nb_of_times = int(input(""))
+nb_of_times = int(input())
 for i in range(nb_of_times):
     try:
         print(subprocess.check_output(['ping', 'google.com']))
     except subprocess.CalledProcessError as err:
         print(err)
+
+configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+    if set_prefix:
+        set_script_prefix(
+            '/' if settings.FORCE_SCRIPT_NAME is None else settings.FORCE_SCRIPT_NAME
+        )
+    apps.populate(settings.INSTALLED_APPS)
+
+if not hasattr(self, 'label'):
+            self.label = app_name.rpartition(".")[2]
+        if not self.label.isidentifier():
+            raise ImproperlyConfigured(
+                "The app label '%s' is not a valid Python identifier." % self.label
+            )
+
+app_config_class = None
+app_name = None
+app_module = None
+
+self.assertDatasetProduces(dataset, expected_output=[components])
+dataset = dataset_ops.Dataset.from_tensors(components)
+Foo = collections.namedtuple("Foo", ["x", "y"])
+
+@keras_export('keras.backend.cast_to_floatx')
+@dispatch.add_dispatch_support
+
+tf_modules = find_modules()
+
+return isinstance(output_stream, str) and output_stream.startswith("file://")
+
+self.assertIsInstance(lookuptable, ps_values.DistributedTable)
+self.assertEqual(self.evaluate(lookuptable.size()), 3)
+
+checkpoint_dir = self.get_temp_dir()
+checkpoint_prefix = os.path.join(checkpoint_dir, "ckpt")
+
